@@ -4,7 +4,7 @@
 
 ## Brandon Iticka
 
-## (placeholder)
+## https://itbrandon.github.io/cpnt260-final-project/
 
 ### Attributions:
 
