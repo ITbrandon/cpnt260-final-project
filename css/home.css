@@ -1,0 +1,53 @@
+/* HERO */
+.hero {
+  display: none;
+}
+
+video {
+  display: none;
+}
+
+.cta {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/coook.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cta-content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  background-color: var(--BGCOLOR);
+  padding: 1rem;
+  border: 2px solid var(--FONT-COLOR);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px var(--DARK-COLOR);
+  color: var(--FONT-COLOR);
+  width: min(400px, 100%);
+}
+
+.cta-content p {
+  line-height: 1.8;
+}
+
+.cta-content a {
+  text-decoration: none;
+  border: 2px solid var(--FONT-COLOR);
+  background-color: var(--FONT-COLOR);
+  color: var(--BGCOLOR);
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.cta-content a:hover {
+  color: var(--FONT-COLOR);
+  background-color: var(--BGCOLOR);
+}

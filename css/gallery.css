@@ -1,0 +1,110 @@
+/* HERO */
+.gallery-hero {
+  height: 100vh;
+  background-image: url(../images/cookk.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-cta {
+  background-color: var(--BGCOLOR);
+  color: var(--FONT-COLOR);
+  display: flex;
+  flex-flow: column nowrap;
+  gap:  1rem;
+  width: min(250px, 100%);
+  text-align: center;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 0 10px var(--DARK-COLOR);
+}
+
+.gallery-cta a {
+  text-decoration: none;
+  color: var(--FONT-COLOR);
+  background-color: var(--ACCENT-COLOR);
+  background-image: radial-gradient(circle, var(--LIGHT-COLOR), var(--ACCENT-COLOR));
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid var(--ACCENT-COLOR);
+  transition: 0.4s;
+}
+
+.gallery-cta a:hover {
+  background-color: var(--FONT-COLOR);
+  border: 2px solid var(--FONT-COLOR);
+}
+
+/* MAIN */
+.gallery-main {
+  background-image: radial-gradient(circle, var(--LIGHT-COLOR), var(--FONT-COLOR));
+  padding: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  background-color: var(--BGCOLOR);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px var(--DARK-COLOR);
+  width: min(260px, 100%);
+  height: 490px;
+  text-decoration: none;
+}
+
+.card:hover {
+  opacity: 0.6;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.card .recipe {
+  background-color: var(--FONT-COLOR);
+  color: var(--BGCOLOR);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px var(--DARK-COLOR);
+}
+
+.card .recipe h3 {
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
+.card .recipe p {
+  margin-bottom: 1rem;
+}
+
+.card .recipe .ingredients {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 0.5fr;
+  grid-gap: 2rem;
+  row-gap: 3rem;
+  place-items: center;
+}

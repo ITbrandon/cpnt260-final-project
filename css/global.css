@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+button,input,label {
+  font-family: inherit;
+}
+
+img, iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, nav a, footer p, footer ul li a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* VARIABLES */
+:root {
+  --BGCOLOR: hsl(0, 0%, 96%);
+  --FONT-COLOR: hsl(25, 76%, 31%);
+  --FONT-COLOR-HOVER: hsla(25, 76%, 31%, 0.6);
+  --ACCENT-COLOR: hsl(20, 60%, 75%);
+  --LIGHT-COLOR: hsl(0, 0%, 100%);
+  --DARK-COLOR: hsl(0, 0%, 0%);
+  --ACTIVE-COLOR: hsl(0, 100%, 50%);
+}
+
+/* GLOBAL ITEMS */
+
+/* NAVBAR */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  background-color: var(--BGCOLOR);
+}
+
+nav .title a {
+  color: var(--FONT-COLOR);
+  text-decoration: none;
+}
+
+nav .nav-list {
+  display: none;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+nav .nav-list li a {
+  text-decoration: none;
+  color: var(--FONT-COLOR);
+  transition: 0.4s;
+}
+
+nav .nav-list li a:hover {
+  color: var(--FONT-COLOR-HOVER);
+}
+
+nav .nav-list .current a {
+  font-weight: 700;
+ }
+
+nav .nav-list .current a:hover {
+  color: var(--FONT-COLOR);
+}
+
+nav .search {
+  display: none;
+  gap: 10px;
+}
+
+.search button {
+  background-color: var(--FONT-COLOR);
+  color: var(--LIGHT-COLOR);
+  border: 2px solid var(--FONT-COLOR);
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.search button:hover {
+  background-color: var(--ACCENT-COLOR);
+  border: 2px solid var(--ACCENT-COLOR);
+  color: var(--DARK-COLOR);
+}
+
+.search button:active {
+  background-color: var(--ACTIVE-COLOR);
+  border: 2px solid var(--ACTIVE-COLOR);
+}
+
+.search input {
+  border-radius: 10px;
+  border: 2px solid var(--FONT-COLOR);
+  padding-left: 0.5rem;
+}
+
+.bar {  
+  width: 30px;   
+  height: 2px;   
+  background-color: var(--FONT-COLOR);  
+  margin: 6px 0;   
+ } 
+
+ .hamburger-menu {      
+   flex-direction: column;   
+   cursor: pointer; 
+ }
+
+ .toggle-menu {
+  position: absolute;
+  top: 100%;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.4s;
+  width: 100%;
+ }
+
+ .toggle-menu ul {
+  text-align: center;
+ }
+
+ .toggle-menu ul li {
+  background-color: var(--FONT-COLOR);
+  border-bottom: 2px solid var(--BGCOLOR);
+  cursor: pointer;
+  transition: 0.4s;
+ }
+
+ .toggle-menu ul li:hover {
+  background-color: var(--BGCOLOR);
+ }
+
+ .toggle-menu ul li:hover a {
+  color: var(--FONT-COLOR);
+ }
+
+ .toggle-menu ul li a {
+  text-decoration: none;
+  color: var(--BGCOLOR);
+  display: block;
+  width: 100%;
+  padding: 1rem;
+ }
+
+ nav.active .toggle-menu {
+  height: 340px;
+}
+
+ /* FOOTER */
+footer {
+  text-align: center;
+  background-color: var(--FONT-COLOR);
+  color: var(--BGCOLOR);
+  padding: 0.3rem;
+  position: sticky;
+  bottom: 0;
+}
+
+footer p {
+  line-height: 1.6;
+}
